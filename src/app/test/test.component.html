@@ -1,0 +1,128 @@
+<head>
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial;
+    }
+    h1 {
+      height: 100%;
+      margin: 0;
+      font-family: Arial;
+      color: powderblue;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.15em;
+
+      display: inline-block;
+      padding: 15px 20px;
+      position: relative;
+    }
+    body,
+    html {
+      background-color: green;
+      height: 100%;
+      margin: 0;
+      font-family: Arial;
+    }
+    img:hover {
+      background-color: purple;
+      isplay: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      transition-property: color, background-color, border-color,
+        border-bottom-color;
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: cubic-bezier(0.33, 0, 0.3, 1);
+      transition-timing-function: cubic-bezier(0.33, 0, 0.3, 1);
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 19px;
+      white-space: nowrap;
+    }
+    .img {
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.15em;
+
+      display: inline-block;
+      padding: 15px 20px;
+      position: relative;
+    }
+    img:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 2;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: #fff;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+    img:after {
+      width: 32%;
+      left: 0;
+    }
+    .center {
+      margin: auto;
+      width: 50%;
+      border: 10px solid #73ad21;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="integrations-block__integration">
+    <img
+      draggable="false"
+      alt="Twitter"
+      src="https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/10474/assets/images/components/integrations-block/dark/twitter.svg"
+      role="img"
+      tabindex="0"
+      data-src="https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/10474/assets/images/components/integrations-block/dark/instagram.svg"
+      data-aria-label="Instagram"
+    />
+  </div>
+  <div class="center">
+    <h1><b>CONTACT US: </b></h1>
+
+    <h2>Add your email:</h2>
+    <input type="text" />
+
+    <button>SUBMIT</button>
+    <div class="integrations-block__integration">
+      <img
+        draggable="false"
+        alt="Instagram"
+        src="https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/10474/assets/images/components/integrations-block/dark/instagram.svg"
+        role="img"
+        tabindex="0"
+      />
+    </div>
+
+    <div class="integrations-block__integration">
+      <img
+        draggable="false"
+        alt="Dropbox"
+        src="https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/10474/assets/images/components/integrations-block/dark/dropbox.svg"
+        role="img"
+        tabindex="0"
+      />
+    </div>
+
+    <div class="integrations-block__integration">
+      <img
+        draggable="false"
+        alt="YouTube"
+        src="https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/10474/assets/images/components/integrations-block/dark/youtube.svg"
+        role="img"
+        tabindex="0"
+      />
+    </div>
+  </div>
+</body>

@@ -1,0 +1,81 @@
+<head>
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial;
+    }
+
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial;
+    }
+
+    .tablink {
+      background-color: orange;
+      color: white;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 20px 16px;
+      font-size: 17px;
+      width: 33%;
+    }
+
+    .tablink:hover {
+      background-color: black;
+      isplay: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      transition-property: color, background-color, border-color,
+        border-bottom-color;
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: cubic-bezier(0.33, 0, 0.3, 1);
+      transition-timing-function: cubic-bezier(0.33, 0, 0.3, 1);
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 19px;
+      white-space: nowrap;
+    }
+
+    button {
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.15em;
+
+      display: inline-block;
+      padding: 15px 20px;
+      position: relative;
+    }
+    button:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 2;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: #fff;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+    button:hover:after {
+      width: 32%;
+      left: 0;
+    }
+  </style>
+</head>
+
+<button (click)="goToPage('home')" class="tablink">Home</button>
+
+<button (click)="goToPage('about-us')" class="tablink">About Us</button>
+
+<button (click)="goToPage('test')" class="tablink">Contact US</button>
+
+<router-outlet></router-outlet>
